@@ -1,4 +1,4 @@
-#gemaakt door Gino terlingen
+#gemaakt door Gino Terlingen
 
 import random
 
@@ -20,13 +20,28 @@ pogingen = 0
 letters = []
 fouteLetters = []
 
+
 while True:
+    wincon = 0
     for x in woord:
         if x in letters:
             print(x, end = ' ')
         else:
             print('_', end = ' ')
-    print(woord)
+            wincon += 1
+    if wincon == 0:
+        print("hoera je heb het geraden")
+        print("wil je nog een keer proberen ja/nee")
+        janee = input()
+        if janee == "ja":
+            pogingen = 0
+            letters.clear()
+            fouteLetters.clear()
+            
+            print("veel speel plezier")
+            continue
+        print("tot de volgende keer")
+        exit()
     letter = input("\nGeef een letter: ")
     if len(letter) == 1:
         if letter in woord:
