@@ -1,3 +1,5 @@
+#gemaakt door Gino terlingen
+
 import random
 
 print("dit is een spelletje hangman")
@@ -24,6 +26,7 @@ while True:
             print(x, end = ' ')
         else:
             print('_', end = ' ')
+    print(woord)
     letter = input("\nGeef een letter: ")
     if len(letter) == 1:
         if letter in woord:
@@ -56,4 +59,60 @@ while True:
         exit()
 
 
+
+    if pogingen == 0:
+        print("   ___\n"
+            "  /  |\n"
+            "  |      \n"
+            "  |      \n"
+            "  |      \n"
+            "__|__\n")        
+
+    if pogingen == 1:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  |\n"
+            "  |\n"
+            "__|__\n")        
+
+    if pogingen == 2:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  |  |\n"
+            "  |\n"
+            "__|__\n")         
+
+    if pogingen == 3:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  | /|\n"
+            "  |\n"
+            "__|__\n")               
+
+    if pogingen == 4:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  | /|\ \n"
+            "  |\n"
+            "__|__\n")       
+
+    if pogingen == 5:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  | /|\ \n"
+            "  | /\n"
+            "__|__\n")     
+
+    if pogingen == 6:
+        print("   ___\n"
+            "  /  |\n"
+            "  |  O\n"
+            "  | /|\ \n"
+            "  | / \ \n"
+            "__|__\n")     
 
